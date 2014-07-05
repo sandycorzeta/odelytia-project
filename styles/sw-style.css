@@ -1,0 +1,179 @@
+.sw-centerize{
+    text-align: center;
+}
+.sw-wide-fix{
+    margin-right: 0;
+    width: 15.2%;
+}
+.sw-wide-right-fix{
+    margin-right: 28.5%;
+}
+.sw-clear:before, .sw-clear:after {
+    content: "";
+    display: table;
+}
+.sw-grid-separator{
+    padding-top: 0.75em;
+}
+.sw-marginize{
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+.sw-clear:after {
+    clear: both;
+}
+.sw-img-centerize{
+    display: block;
+    margin: auto;
+}
+.sw-right-align{
+    text-align: right;
+}
+.sw-left-align{
+    text-align: left;
+}
+.sw-center-align{
+    text-align: center;
+}
+.sw-img-borderize{
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+}
+.sw-info-typograph{
+    font-size: 1.35em;
+    line-height: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.sw-big-header{
+    font-family: 'Armata', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 0.3824em
+}
+.sw-sub-title{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    font-size: 1.75em;
+    opacity: 0.75;
+    text-transform: uppercase;
+}
+.sw-sub-content{
+    font-family:  'Asap', sans-serif;
+    font-size: 2.25em;
+    text-align: right;
+}
+.sw-sub-head{
+    text-align: center;
+    font-size: 1.25em;
+    font-family: 'Exo', sans-serif;
+    font-style: italic;
+}
+.sw-sub-bighead{
+    text-align: center;
+    font-size: 1.75em;
+    font-family: 'Exo', sans-serif;
+}
+.sw-sub-head-child{
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+.sw-sub-head-child-small{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+.sw-p-clear{
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.sw-padding-space-up{
+    padding-top: 0.5em;
+}
+.sw-graph-pie{
+    width: 25em !important;
+    height: 12.5em !important;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 11.1em;
+}
+.tab-selected-bg{
+    background: url('../images/cursor_tab.png') no-repeat;
+    background-position: center;
+    border-style: none;
+}
+.sw-font-awesome{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.sw-icon:before{
+    content: '\00a0';
+}
+.sw-icon{
+    position: relative;
+    display: inline-block;
+    width: 1em;
+    line-height: 1em;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sw-icon-osu{
+    background-image: url(../images/osu.svg);
+}
+.sw-icon-taiko{
+    background-image: url(../images/taiko.svg);
+}
+.sw-icon-ctb{
+    background-image: url(../images/taiko.svg);
+}
+.sw-icon-mania{
+    background-image: url(../images/mania.svg);
+}
+.sw-border-left{
+    border-left: 1px solid black;
+}
+.sw-border-right{
+    border-right: 1px solid black;
+}
+.sw-border-top{
+    border-top:  2px solid black;
+}
+.sw-border-bottom{
+    border-bottom: 2px solid black;
+}
+@media all and (min-device-height: 720px) and (min-device-width: 1200px) {
+    .sw-bginfo-tab-content {
+        background: url('../images/78.png') no-repeat;
+        background-position: center;
+        background-position-y: 20em;
+    }
+    .sw-bgdownload-tab-content {
+        background: url('') no-repeat;
+        background-size: cover;
+        background-position-y: 20em;
+    }
+    .sw-bgachievement-tab-content {
+        background: url('') no-repeat;
+        background-size: cover;
+        background-position-y: 20em;
+    }
+    .sw-bgperformance-tab-content {
+        background: url('../images/75.png') no-repeat;
+        background-size: cover;
+        background-position-y: 18em;
+    }
+    .sw-bgcomment-tab-content {
+        background: url('') no-repeat;
+        background-size: cover;
+        background-position-y: 20em;
+    }
+}
+@media all and (max-device-height: 1280px) and (max-device-width: 720px) {
+    .sw-bg-tab-content {
+        background: white;
+    }
+}
