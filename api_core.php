@@ -10,7 +10,7 @@ include 'langfunc.php';
 $osu_dbhost = "localhost" ;
 $osu_dbname = "osu_db" ;
 $osu_dbuser = "root" ;
-$osu_dbpass = "" ;
+$osu_dbpass = "sandychan" ;
 
 //Basic Conf
 $uid = '3268516'; // Insert your userid here

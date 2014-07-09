@@ -174,18 +174,20 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
                     <p class="sw-performance-typograph sw-sub-bighead sw-p-clear sw-border-top sw-border-bottom">Score</p>
                     <div class="g--third sw-padding-space-up">
                         <p class="sw-performance-typograph sw-sub-head sw-p-clear"># Total #</p>
-                        <p class="sw-performance-typograph sw-sub-head-child-small sw-p-clear"><?php
-                        if ($data_user['total_score'] > 999999 && $data_user['total_score'] <= 999999999) {
-                        $result_raw = $data_user['total_score'] / 1000000;
-                        $result = number_format($result_raw, 2) . ' M';
-                        } elseif ($data_user['total_score'] > 999999999) {
-                        $result_raw = $data_user['total_score'] / 1000000000;
-                        $result = number_format($result_raw, 2) . ' B';
-                        } else {
-                        $result = $data_user['total_score'];
-                        }
-                        echo $result;
-                        ?></p>
+                        <p class="sw-performance-typograph sw-sub-head-child-small sw-p-clear">
+                            <?php
+                            if ($data_user['total_score'] > 999999 && $data_user['total_score'] <= 999999999) {
+                            $result_raw = $data_user['total_score'] / 1000000;
+                            $result = number_format($result_raw, 2) . ' M';
+                            } elseif ($data_user['total_score'] > 999999999) {
+                            $result_raw = $data_user['total_score'] / 1000000000;
+                            $result = number_format($result_raw, 2) . ' B';
+                            } else {
+                            $result = $data_user['total_score'];
+                            }
+                            echo $result;
+                            ?>
+                        </p>
                     </div>
                     <div class="g--third sw-padding-space-up">
                         <p class="sw-performance-typograph sw-sub-head sw-p-clear"># Ranked #</p>
@@ -218,7 +220,7 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
                             $result = $unranked_score;
                             }
                             echo $result;
-                        ?>
+                            ?>
                         </p>
                     </div>
                 </div>
