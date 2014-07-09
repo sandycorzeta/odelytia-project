@@ -7,10 +7,11 @@ This file save all of configurations that have been set up, for parsing the data
 **/
 include 'langfunc.php';
 //Database Conf
-$osu_dbhost = "localhost" ;
+$osu_dbhost = "53bd65e14382ecc4c800039d-scorzprivate.rhcloud.com" ;
 $osu_dbname = "osu_db" ;
-$osu_dbuser = "root" ;
-$osu_dbpass = "sandychan" ;
+$osu_dbuser = "adminyCMJSds" ;
+$osu_dbpass = "C7ryPXfiIFGa" ;
+$osu_port = "63541" ;
 
 //Basic Conf
 $uid = '3268516'; // Insert your userid here
@@ -33,7 +34,7 @@ function osu_user($osu_finduser,$osu_oldactivity=false,$osu_forcecache=FALSE,$os
     
     global $osu_dbhost, $osu_dbname, $osu_dbuser, $osu_dbpass, $uid, $osu_mode, $osu_api_key, $event_days, $langlong_array, $langshort_array;
 
-    $osu_db = new PDO("mysql:host=${osu_dbhost};dbname=${osu_dbname}", $osu_dbuser, $osu_dbpass, array(PDO::ATTR_PERSISTENT => TRUE));
+    $osu_db = new PDO("mysql:host=${osu_dbhost};port=${osu_port};dbname=${osu_dbname}", $osu_dbuser, $osu_dbpass, array(PDO::ATTR_PERSISTENT => TRUE));
     $osu_db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($osu_oldactivity == true){
