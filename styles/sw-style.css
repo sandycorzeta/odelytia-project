@@ -26,6 +26,9 @@
     display: block;
     margin: auto;
 }
+.sw-img-height-fix{
+    height: 128px !important;
+}
 .sw-right-align{
     text-align: right;
 }

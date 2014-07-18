@@ -73,7 +73,7 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
         <button class="tab-btn tab-1" data-tabsection="achievement-tab-content"><i class="fa fa-star-half-o sw-font-awesome"></i></button>
         <button class="tab-btn tab-2" data-tabsection="performance-tab-content"><i class="fa fa-history sw-font-awesome"></i></button>
         <button class="tab-btn tab-3" data-tabsection="info-tab-content"><i class="fa fa-user sw-font-awesome"></i></button>
-        <button class="tab-btn tab-4" data-tabsection="comment-tab-content"><i class="fa fa-comments sw-font-awesome"></i></button>
+        <button class="tab-btn tab-4" data-tabsection="thanks-tab-content"><i class="fa fa-heart sw-font-awesome"></i></button>
         <button class="tab-btn tab-5" data-tabsection="download-tab-content"><i class="fa fa-download sw-font-awesome"></i></button>
     </nav>
 
@@ -145,7 +145,7 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
             <div class="g-medium--1 g-wide--1 sw-wide-fix sw-clear">
                 <p class="sw-performance-typograph sw-sub-head sw-p-clear">Mode</p>
                 <div class="sw-performance-typograph sw-sub-head-child sw-p-clear">
-                    <div class="sw-icon sw-icon-mania"></div>
+                    <div class="sw-icon sw-icon-<?php echo $game_mode_id ;?>"></div>
                     <p class="sw-performance-typograph sw-p-clear"><?php echo $game_mode;?></p>
                 </div>
             </div>
@@ -257,8 +257,29 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
               </div>
             </div>
         </section>
-        <section class="comment-tab-content tab-content">
-            <h1 class="sw-centerize sw-big-header">Commentary</h1>
+        <section class="thanks-tab-content tab-content">
+            <h1 class="sw-centerize sw-big-header">Special Thanks To</h1>
+            <div class="g--third">
+               <div class="g--centered sw-centerize">
+                 <img class="sw-img-borderize sw-img-height-fix" src="https://s.ppy.sh/a/922812" alt="avatar">
+               </div>
+               <p class="sw-thanks-typograph sw-sub-head sw-p-clear">[Kitty]</p>
+               <p class="sw-thanks-typograph sw-sub-head sw-p-clear">Code Concept</p>
+            </div>
+            <div class="g--third">
+              <div class="g--centered sw-centerize">
+                <img class="sw-img-borderize sw-img-height-fix" src="https://s.ppy.sh/a/3835107" alt="avatar">
+              </div>
+              <p class="sw-thanks-typograph sw-sub-head sw-p-clear">rendra123</p>
+              <p class="sw-thanks-typograph sw-sub-head sw-p-clear">Classmates & Idea Maker</p>
+            </div>
+            <div class="g--third g--last">
+              <div class="g--centered sw-centerize">
+                <img class="sw-img-borderize sw-img-height-fix" src="https://s.ppy.sh/a/2" alt="avatar">
+              </div>
+              <p class="sw-thanks-typograph sw-sub-head sw-p-clear">peppy</p>
+              <p class="sw-thanks-typograph sw-sub-head sw-p-clear">Creator of osu! and its API</p>
+            </div>
         </section>
         <section class="download-tab-content tab-content">
             <h1 class="sw-centerize sw-big-header">Download Source Code</h1>

@@ -27,6 +27,16 @@ if ($osu_mode == '0'){
     $game_mode = 'osu!Mania';
 }
 
+if ($osu_mode == '0'){
+    $game_mode_id = 'osu';
+} elseif ($osu_mode == '1'){
+    $game_mode_id = 'taiko';
+} elseif ($osu_mode == '2'){
+    $game_mode_id = 'ctb';
+} elseif ($osu_mode == '3'){
+    $game_mode_id = 'mania';
+}
+
 //Osu API Core class
 
 function osu_user($osu_finduser,$osu_oldactivity=false,$osu_forcecache=FALSE,$osu_cache_expire=60){
