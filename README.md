@@ -6,3 +6,9 @@ Project Odelyt!a is a Custom Personalization of user profile statistics based on
 The cost of this project is free, and as is still being developed. This project still maintainly unstable and need some rework design.
 
 If you are fluent on PHP and might be other too (like JS [for NodeJS], Ruby, or even Python). You can fork this project and may contribute a new port of this Project.
+
+TO-DO LIST
+=============
+* Adding Github Forking and Source Code Download content tab.
+* Adding Recent Plays feature.
+* Responsive Design works.
