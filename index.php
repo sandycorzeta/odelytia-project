@@ -153,6 +153,9 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
                 <p class="sw-performance-typograph sw-sub-head sw-p-clear">World Ranking</p>
                 <p class="sw-performance-typograph sw-sub-head-child sw-p-clear">#<?php echo $data_user['pp_rank'] ;?></p>
             </div>
+            <div class="g--half g--centered">
+              <p class="sw-performance-typograph sw-sub-head sw-p-clear sw-padding-space-down">Data Updated : <?php echo strftime("%A, %d %B %Y %H:%M:%S %Z", $data_user['updated']);?></p>
+            </div>
             <div class="g--half">
                 <div class="g-medium--2 g-medium--push-1 g-medium--last g-wide--3 g-wide--push-1 g-wide--last">
                     <p class="sw-performance-typograph sw-sub-bighead sw-p-clear sw-border-top sw-border-bottom">Profile History</p>
@@ -226,27 +229,32 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
                     </div>
                 </div>
             </div>
-         
         </section>
         <section class="info-tab-content tab-content sw-bginfo-tab-content">
             <h1 class="sw-centerize sw-big-header">Personal Info</h1>
-            <div class="color--user g--half g--centered sw-clear sw-marginize">
-                <img class="sw-img-centerize sw-img-borderize" src="https://s.ppy.sh/a/<?php echo $data_user['user_id'];?>" alt="avatar">
+            <div class="g--half g--centered sw-padding-space-down-medium">
+              <div class="g--half g--last sw-centerize">
+                <img class="sw-img-borderize" src="https://s.ppy.sh/a/<?php echo $data_user['user_id'];?>" alt="avatar">
+              </div>
+              <div class="g--half g--last sw-centerize sw-padding-space-down-medium">
+                <div class="sw-flag-container sw-centerize">
+                  <p class="sw-img-borderize flag flag-icon-background flag-icon-<?php echo $country_id ;?> sw-flag"></p>
+                </div>
+              </div>
             </div>
-            <div class="color--user g--third sw-info-typograph sw-clear sw-marginize sw-center-align">
-                <p class="sw-info-typograph sw-sub-title">#ID</p>
-                <p class="sw-grid-separator"></p>
-                <p class="sw-info-typograph sw-sub-content"><?php echo $data_user['user_id'] ;?></p>
-            </div>
-            <div class="color--user g--third sw-info-typograph sw-clear sw-marginize sw-center-align">
-                <p class="sw-info-typograph sw-sub-title">Username</p>
-                <p class="sw-grid-separator"></p>
-                <p class="sw-info-typograph sw-sub-content"><?php echo $data_user['username'] ;?></p>
-            </div>
-            <div class="color--user g--third g--last sw-info-typograph sw-clear sw-marginize sw-center-align">
-                <p class="sw-info-typograph sw-sub-title">Country</p>
-                <p class="sw-info-typograph sw-sub-content"><?php echo $country_name ;?></p>
-                <p class="flag flag-icon-background flag-icon-DE"></p>
+            <div class="g--half g--centered">
+              <div class="g--third sw-padding-space-up-medium">
+                <p class="sw-info-typograph sw-sub-head sw-p-clear"># ID #</p>
+                <p class="sw-info-typograph sw-sub-head-child-small sw-p-clear sw-info-typograph-fontsize-fix"><?php echo $data_user['user_id'] ;?></p>
+              </div>
+              <div class="g--third sw-padding-space-up-medium">
+                  <p class="sw-info-typograph sw-sub-head sw-p-clear"># Username #</p>
+                  <p class="sw-info-typograph sw-sub-head-child-small sw-p-clear sw-info-typograph-fontsize-fix"><?php echo $data_user['username'] ;?></p>
+              </div>
+              <div class="g--third g--last sw-padding-space-up-medium">
+                  <p class="sw-info-typograph sw-sub-head sw-p-clear"># Country #</p>
+                  <p class="sw-info-typograph sw-sub-head-child-small sw-p-clear sw-info-typograph-fontsize-fix"><?php echo $country_name ;?></p>
+              </div>
             </div>
         </section>
         <section class="comment-tab-content tab-content">
@@ -254,6 +262,9 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
         </section>
         <section class="download-tab-content tab-content">
             <h1 class="sw-centerize sw-big-header">Download Source Code</h1>
+            <div class="color--user g--half g--centered sw-clear sw-marginize">
+              <p class="">Text Area</p>
+            </div>
         </section>
     </div>
     <script src="scripts/tabbar.js" type="text/javascript"></script>

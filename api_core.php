@@ -7,10 +7,10 @@ This file save all of configurations that have been set up, for parsing the data
 **/
 include 'langfunc.php';
 //Database Conf
-$osu_dbhost = getenv('OPENSHIFT_MYSQL_DB_HOST') ;
+$osu_dbhost = "localhost" ;
 $osu_dbname = "osu_db" ;
-$osu_dbuser = getenv('OPENSHIFT_MYSQL_DB_USERNAME') ;
-$osu_dbpass = getenv('OPENSHIFT_MYSQL_DB_PASSWORD') ;
+$osu_dbuser = "root" ;
+$osu_dbpass = "admin" ;
 
 //Basic Conf
 $uid = '3268516'; // Insert your userid here

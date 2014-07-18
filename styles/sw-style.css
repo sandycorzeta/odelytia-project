@@ -45,6 +45,9 @@
     padding-top: 0;
     padding-bottom: 0;
 }
+.sw-info-typograph-fontsize-fix{
+    font-size: 1.7em !important;
+}
 .sw-big-header{
     font-family: 'Armata', sans-serif;
     text-transform: uppercase;
@@ -93,12 +96,14 @@
 .sw-padding-space-up{
     padding-top: 0.5em;
 }
-.sw-graph-pie{
-    width: 25em !important;
-    height: 12.5em !important;
-    margin: 0 auto;
-    text-align: center;
-    margin-left: 11.1em;
+.sw-padding-space-up-medium{
+    padding-top: 1em;
+}
+.sw-padding-space-down-medium{
+    padding-bottom: 2em;
+}
+.sw-padding-space-down{
+    padding-bottom: 1em;
 }
 .tab-selected-bg{
     background: url('../images/cursor_tab.png') no-repeat;
@@ -108,6 +113,15 @@
 .sw-font-awesome{
     font-size: 1.5em;
     line-height: 1.5em;
+}
+.sw-flag{
+    width: 128px;
+    height: 128px;
+    background-size: cover;
+}
+.sw-flag-container{
+    margin: 0 auto;
+    width: 128px;
 }
 .sw-icon:before{
     content: '\00a0';
