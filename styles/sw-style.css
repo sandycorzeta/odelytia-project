@@ -44,7 +44,7 @@
 }
 .sw-info-typograph{
     font-size: 1.35em;
-    line-height: 1em;
+    line-height: 1.4em;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -162,7 +162,7 @@
 .sw-border-bottom{
     border-bottom: 2px solid black;
 }
-@media all and (min-device-height: 720px) and (min-device-width: 1200px) {
+@media (min-device-height: 720px) and (min-device-width: 1200px) {
     .sw-bginfo-tab-content {
         background: url('../images/78.png') no-repeat;
         background-position: center;
@@ -174,9 +174,9 @@
         background-position-y: 20em;
     }
     .sw-bgachievement-tab-content {
-        background: url('') no-repeat;
+        background: url('../images/bg2.png') no-repeat;
         background-size: cover;
-        background-position-y: 20em;
+        background-position-y: 18em;
     }
     .sw-bgperformance-tab-content {
         background: url('../images/75.png') no-repeat;

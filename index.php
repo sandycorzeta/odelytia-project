@@ -78,7 +78,7 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
     </nav>
 
     <div class="content-container">
-        <section class="achievement-tab-content tab-content">
+        <section class="achievement-tab-content tab-content sw-bgachievement-tab-content">
             <h1 class="sw-centerize sw-big-header">Achievement Statistics</h1>
             <div class="g--half g--centered">
                 <div class="g--half g--last">
@@ -100,38 +100,40 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
                 </div>
                 <div class="g--half g--last">
                     <p class="sw-achievement-typograph sw-sub-head sw-p-clear">Total High Ranked Beatmap</p>
-                    <p class="sw-achievement-typograph sw-sub-head-child sw-p-clear"><?php echo $count_rank_total; ?></p>
+                    <p class="sw-achievement-typograph sw-sub-head-child sw-p-clear"><?php echo number_format($count_rank_total); ?></p>
                 </div>
             </div>
             <div class="g--half g--last">
                 <div class="g-medium--2 g-medium--push-1 g-medium--last g-wide--3 g-wide--push-1 g-wide--last g--centered">
-                    <div class="g--third">
+                    <p class="sw-achievement-typograph sw-sub-bighead sw-p-clear sw-border-top sw-border-bottom">Hitkey Score</p>
+                    <div class="g--third sw-padding-space-up">
                         <p class="sw-achievement-typograph sw-sub-head sw-p-clear">300 Hitkeys</p>
-                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo $data_user['count300']; ?></p>
+                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo number_format($data_user['count300']); ?></p>
                     </div>
-                    <div class="g--third">
+                    <div class="g--third sw-padding-space-up">
                         <p class="sw-achievement-typograph sw-sub-head sw-p-clear">100 Hitkeys</p>
-                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo $data_user['count100']; ?></p>
+                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo number_format($data_user['count100']); ?></p>
                     </div>
-                    <div class="g--third g--last">
+                    <div class="g--third g--last sw-padding-space-up">
                         <p class="sw-achievement-typograph sw-sub-head sw-p-clear">50 Hitkeys</p>
-                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo $data_user['count50']; ?></p>
+                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo number_format($data_user['count50']); ?></p>
                     </div>
                 </div>
             </div>
             <div class="g--half g--last">
                 <div class="g-medium--2 g-medium--push-1 g-medium--last g-wide--3 g-wide--push-1 g-wide--last g--centered">
-                    <div class="g--third">
+                    <p class="sw-achievement-typograph sw-sub-bighead sw-p-clear sw-border-top sw-border-bottom">Beatmap Passed</p>
+                    <div class="g--third sw-padding-space-up">
                         <p class="sw-achievement-typograph sw-sub-head sw-p-clear">SS Ranked</p>
-                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo $data_user['count_rank_ss']; ?></p>
+                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo number_format($data_user['count_rank_ss']); ?></p>
                     </div>
-                    <div class="g--third">
+                    <div class="g--third sw-padding-space-up">
                         <p class="sw-achievement-typograph sw-sub-head sw-p-clear">S Ranked</p>
-                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo $data_user['count_rank_s']; ?></p>
+                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo number_format($data_user['count_rank_s']); ?></p>
                     </div>
-                    <div class="g--third g--last">
+                    <div class="g--third g--last sw-padding-space-up">
                         <p class="sw-achievement-typograph sw-sub-head sw-p-clear">A Ranked</p>
-                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo $data_user['count_rank_a']; ?></p>
+                        <p class="sw-achievement-typograph sw-sub-head-child-small sw-p-clear"><?php echo number_format($data_user['count_rank_a']); ?></p>
                     </div>
                 </div>
             </div>
@@ -244,16 +246,16 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
             </div>
             <div class="g--half g--centered">
               <div class="g--third sw-padding-space-up-medium">
-                <p class="sw-info-typograph sw-sub-head sw-p-clear"># ID #</p>
-                <p class="sw-info-typograph sw-sub-head-child-small sw-p-clear sw-info-typograph-fontsize-fix"><?php echo $data_user['user_id'] ;?></p>
+                <p class="sw-info-typograph sw-sub-bighead sw-p-clear sw-border-bottom"># ID #</p>
+                <p class="sw-info-typograph sw-sub-head-child-small sw-p-clear sw-info-typograph-fontsize-fix sw-padding-space-up"><?php echo $data_user['user_id'] ;?></p>
               </div>
               <div class="g--third sw-padding-space-up-medium">
-                  <p class="sw-info-typograph sw-sub-head sw-p-clear"># Username #</p>
-                  <p class="sw-info-typograph sw-sub-head-child-small sw-p-clear sw-info-typograph-fontsize-fix"><?php echo $data_user['username'] ;?></p>
+                  <p class="sw-info-typograph sw-sub-bighead sw-p-clear sw-border-bottom"># Username #</p>
+                  <p class="sw-info-typograph sw-sub-head-child-small sw-p-clear sw-info-typograph-fontsize-fix sw-padding-space-up"><?php echo $data_user['username'] ;?></p>
               </div>
               <div class="g--third g--last sw-padding-space-up-medium">
-                  <p class="sw-info-typograph sw-sub-head sw-p-clear"># Country #</p>
-                  <p class="sw-info-typograph sw-sub-head-child-small sw-p-clear sw-info-typograph-fontsize-fix"><?php echo $country_name ;?></p>
+                  <p class="sw-info-typograph sw-sub-bighead sw-p-clear sw-border-bottom"># Country #</p>
+                  <p class="sw-info-typograph sw-sub-head-child-small sw-p-clear sw-info-typograph-fontsize-fix sw-padding-space-up"><?php echo $country_name ;?></p>
               </div>
             </div>
         </section>
