@@ -285,8 +285,22 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
         </section>
         <section class="download-tab-content tab-content">
             <h1 class="sw-centerize sw-big-header">Download Source Code</h1>
-            <div class="color--user g--half g--centered sw-clear sw-marginize">
-              <p class="">Text Area</p>
+            <div class="g-medium--2 g-medium--last g-wide--3 g--centered">
+                <p class="sw-download-typograph sw-p-clear sw-justified">
+                    <span class="fa fa-code sw-drop-caps sw-drop-caps-left sw-drop-caps-code"></span><span class="sw-headline-bold">Project Odelyt!a</span> is an open-source project that recustomize back user-profile statistics from official user-page on osu! website by using osu!api implementation. This project is written in PHP language as a server-side script, and using MySQL backend as a cache server whenever official osu! website is offline. This project is licensed under MIT License.
+                </p>
+                <p class="sw-download-typograph sw-p-clear sw-justified sw-padding-space-up">
+                    <span class="fa fa-git sw-drop-caps sw-drop-caps-right sw-drop-caps-git"></span>Interested to build your own customized osu! statistics profile or get involved in this project? You can clone or fork this project (porting into another programming language) to make this project becoming more better or you can download the source tarball if you want to get ready to make your own custom osu statistics website.
+                    <p class="sw-centerize">
+                        <span>Clone the project by using git via terminal (command prompt)</span><br>
+                        <code class="sw-code">$ git clone https://github.com/sandycorzeta/odelytia-project</code>
+                    </p>
+                    <p class="sw-centerize">OR</p>
+                    <p class="sw-centerize">
+                        <span>Download the source tarball by clicking button below</span><br>
+                        <a href="https://github.com/sandycorzeta/odelytia-project/archive/master.zip" class="button--primary">Download Odelyt!a Source Code</a>
+                    </p>
+                </p>
             </div>
         </section>
     </div>
