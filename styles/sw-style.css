@@ -32,6 +32,12 @@
 .sw-img-height-fix{
     height: 128px !important;
 }
+.sw-svg-github-fix{
+    padding: 1.5em;
+}
+.sw-svg-google-dev-fix{
+    padding: 2.2em;
+}
 .sw-right-align{
     text-align: right;
 }

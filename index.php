@@ -261,6 +261,7 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
         </section>
         <section class="thanks-tab-content tab-content">
             <h1 class="sw-centerize sw-big-header">Special Thanks To</h1>
+            <p class="sw-padding-space-down"></p>
             <div class="g--third">
                <div class="g--centered sw-centerize">
                  <img class="sw-img-borderize sw-img-height-fix" src="https://s.ppy.sh/a/922812" alt="avatar">
@@ -282,6 +283,20 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
               <p class="sw-thanks-typograph sw-sub-head sw-p-clear">peppy</p>
               <p class="sw-thanks-typograph sw-sub-head sw-p-clear">Creator of osu! and its API</p>
             </div>
+            <div class="g--half sw-padding-space-up-medium">
+                <div class="g--centered sw-centerize">
+                    <img class="sw-img-height-fix sw-svg-github-fix" src="/images/github.svg" alt="logo">
+                </div>
+                <p class="sw-thanks-typograph sw-sub-head sw-p-clear">Github</p>
+                <p class="sw-thanks-typograph sw-sub-head sw-p-clear">Source Code Hosting</p>
+            </div>
+            <div class="g--half g--last sw-padding-space-up-medium">
+                <div class="g--centered sw-centerize">
+                    <img class="sw-img-height-fix sw-svg-google-dev-fix" src="/images/google-dev.svg" alt="logo">
+                </div>
+                <p class="sw-thanks-typograph sw-sub-head sw-p-clear">Web Starter Kit</p>
+                <p class="sw-thanks-typograph sw-sub-head sw-p-clear">Design Framework</p>
+            </div>
         </section>
         <section class="download-tab-content tab-content">
             <h1 class="sw-centerize sw-big-header">Download Source Code</h1>
@@ -297,11 +312,11 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
                     </p>
                     <p class="sw-centerize">OR</p>
                     <p class="sw-centerize">
-                        <span>Download the source tarball by clicking button below</span><br>
-                        <a href="https://github.com/sandycorzeta/odelytia-project/archive/master.zip" class="button--primary">Download Odelyt!a Source Code</a>
+                        <span class="sw-headline-bold">You can download the source tarball by clicking "fork me on github" button on the top right of the page</span>
                     </p>
                 </p>
             </div>
+            <a href="https://github.com/sandycorzeta/odelytia-project"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
         </section>
     </div>
     <script src="scripts/tabbar.js" type="text/javascript"></script>
