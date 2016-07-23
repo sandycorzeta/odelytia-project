@@ -15,7 +15,7 @@ $osu_dbpass = "admin" ;
 //Basic Conf
 $uid = '3268516'; // Insert your userid here
 $osu_mode = '3'; // Pick the main of your osu mode gameplay. 0 = osu!standard, 1 = Taiko, 2 = Catch The Beat, 3 = osu!Mania.
-$osu_api_key = '904a8856dcf8f3b133e230d00f5dbdf81b96765d'; // Input your osu API Key from http://osu.ppy.sh/p/api
+$osu_api_key = '******'; // Input your osu API Key from http://osu.ppy.sh/p/api
 
 if ($osu_mode == '0'){
     $game_mode = 'osu!';
