@@ -45,7 +45,7 @@ function osu_user($osu_finduser,$osu_oldactivity=false,$osu_forcecache=FALSE,$os
     
     global $osu_dsn, $osu_dbhost, $osu_dbname, $osu_dbuser, $osu_dbpass, $osu_mode, $osu_api_key, $event_days, $langlong_array, $langshort_array;
 
-    $osu_db = new PDO($osu_dsn, $osu_dbuser, $osu_dbpass);
+    $osu_db = new PDO($osu_dsn, $osu_dbuser, $osu_dbpass, array(PDO::ATTR_PERSISTENT => TRUE));
     $osu_db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($osu_oldactivity == true){

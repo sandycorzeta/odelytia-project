@@ -44,27 +44,15 @@ $count_rank_total = $data_user['count_rank_ss'] + $data_user['count_rank_s'] + $
 
         <!-- build:css styles/components/main.min.css -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            WebFontConfig = {
-                google: { families: [ 'Dosis:600:latin', 'Asap:400:latin', 'Armata:400:latin', 'Exo:500,500italic:latin', 'Ubuntu+Mono:700:latin' ] }
-            };
-            (function() {
-                var wf = document.createElement('script');
-                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-                wf.type = 'text/javascript';
-                wf.async = 'true';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(wf, s);
-            })(); 
-        </script>
         <link rel="stylesheet" href="styles/h5bp.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/components/components.css">
         <link rel="stylesheet" href="styles/main.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/flag-icon.css">
         <link rel="stylesheet" href="styles/tabbar.css">
         <link rel="stylesheet" href="styles/sw-style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Asap:wght@400&family=Dosis:wght@600&family=Armata:wght@400&family=Exo:ital,wght@0,500;1,500&family=Ubuntu+Mono:wght@700&display=swap">
         <!-- endbuild -->
 </head>
 <body>
