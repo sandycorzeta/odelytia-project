@@ -7,15 +7,16 @@ This file save all of configurations that have been set up, for parsing the data
 **/
 include 'langfunc.php';
 //Database Conf
-$osu_dbhost = "localhost" ;
-$osu_dbname = "osu_db" ;
-$osu_dbuser = "root" ;
-$osu_dbpass = "admin" ;
+$osu_dbhost = $_SERVER['RDS_HOSTNAME'];
+$osu_dbport = $_SERVER['RDS_PORT'];
+$osu_dbname = $_SERVER['RDS_DB_NAME'];
+$osu_dbuser = $_SERVER['RDS_USERNAME'];
+$osu_dbpass = $_SERVER['RDS_PASSWORD'];
 
 //Basic Conf
 $uid = '3268516'; // Insert your userid here
 $osu_mode = '3'; // Pick the main of your osu mode gameplay. 0 = osu!standard, 1 = Taiko, 2 = Catch The Beat, 3 = osu!Mania.
-$osu_api_key = '******'; // Input your osu API Key from http://osu.ppy.sh/p/api
+$osu_api_key = '904a8856dcf8f3b133e230d00f5dbdf81b96765d'; // Input your osu API Key from http://osu.ppy.sh/p/api
 
 if ($osu_mode == '0'){
     $game_mode = 'osu!';
@@ -76,7 +77,7 @@ function osu_user($osu_finduser,$osu_oldactivity=false,$osu_forcecache=FALSE,$os
         }
 
     if (!$osu_forcecache && (($cache_expire > $osu_cache_expire) || ($cache_expire < 0))){
-        $osu_user_api = file_get_contents("https://osu.ppy.sh/api/get_user?k=${osu_api_key}&u=${osu_finduser}&type=id&m=${osu_mode}&event_days=${event_days}");
+        $osu_user_api = file_get_contents("https://osu.ppy.sh/api/v1/get_user?k=${osu_api_key}&u=${osu_finduser}&type=id&m=${osu_mode}&event_days=${event_days}");
         $parse_user_api = json_decode($osu_user_api, TRUE);
         $data_user = $parse_user_api[0];
         $count_total = $data_user['count300'] + $data_user['count100'] + $data_user['count50'];
